@@ -4,8 +4,6 @@
 
 For this project, we will work with the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment and solve it using RL models for continuous actions/controls.
 
-![Reacher](https://classroom.udacity.com/nanodegrees/nd893-ent/parts/3f657114-51e6-476e-a34d-0513f8173072/modules/7a7f8ae1-8786-4195-ad38-af58bf50cd02/lessons/665ccd87-d19f-4108-bf56-ee1d3054c2a8/concepts/540e7c18-6831-417e-981c-309c3ffedd56#)
-
 In this environment, a double-jointed arm can move to target locations. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of your agent is to maintain its position at the target location for as many time steps as possible.
 
 The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
@@ -26,7 +24,7 @@ The task is episodic, and in order to solve the environment, the agent must get 
 
 ## Approach and solution
 
-The notebook Continuous_Control.ipynb contains the code to set up the environment and the outer episode iteration to solve the reinforcement problem. Our solution uses a Deep Deterministic Policy Gradient approach with experience replay, see this [paper]().
+The notebook Continuous_Control.ipynb contains the code to set up the environment and the outer episode iteration to solve the reinforcement problem. Our solution uses a Deep Deterministic Policy Gradient approach with experience replay, see this [paper](https://arxiv.org/pdf/1509.02971.pdf).
 
 The agent, the deep Q-Network and memory buffer are implemented in the file ddpg_agent.py. The deep learning architectures for both actor and critic are defined in model.py.
 

@@ -24,7 +24,7 @@ The task is episodic, and in order to solve the environment, the agent must get 
 
 ## Approach and solution
 
-The notebook Continuous_Control.ipynb contains the code to set up the environment and the outer episode iteration to solve the reinforcement problem. Our solution uses a Deep Deterministic Policy Gradient approach with experience replay, see this [paper](https://arxiv.org/pdf/1509.02971.pdf).
+The notebook Continuous_Control.ipynb contains the code to set up the environment and the outer episode iteration to solve the reinforcement problem. My solution uses a Deep Deterministic Policy Gradient approach with experience replay, see this [paper](https://arxiv.org/pdf/1509.02971.pdf).
 
 The agent, the deep Q-Network and memory buffer are implemented in the file ddpg_agent.py. The deep learning architectures for both actor and critic are defined in model.py.
 
